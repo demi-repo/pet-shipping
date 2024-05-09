@@ -58,7 +58,7 @@ export default function Home() {
               Federally legal in all 50 states, all natural cannabis shipped to
               your door in 2-3 days.
               <br />
-              It's time to ditch the plug and get baked.
+              It&apos;s time to ditch the plug and get baked.
             </p>
           </div>
 
@@ -404,7 +404,7 @@ export default function Home() {
         <section className="page-section flex justify-center md:pb-20 pb-4 px-5">
           <div className="max-w-screen-2xl w-full flex flex-col items-start md:gap-20 gap-4">
             <span className="font-bold md:text-5xl text-3xl max-w-5xl md:leading-normal leading-none">
-              Aw jeez, why don't you sign up for a nice 20% off your first
+              Aw jeez, why don&apos;t you sign up for a nice 20% off your first
               order? 🔥
             </span>
             <div className="flex flex-nowrap gap-4 w-full">

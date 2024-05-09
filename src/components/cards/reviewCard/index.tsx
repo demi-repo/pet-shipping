@@ -20,7 +20,7 @@ const ReviewCard = (props: any) => {
           </div>
         </div>
         <div className="flex flex-col gap-9 max-w-[548px] justify-center items-center">
-          <h6 className="font-bold md:text-3xl text-xl">"{content}"</h6>
+          <h6 className="font-bold md:text-3xl text-xl">&quot;{content}&quot;</h6>
           <p className="font-bold text-sm uppercase">{name}</p>
         </div>
         <div>

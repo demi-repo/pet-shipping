@@ -22,7 +22,7 @@ const About = (props: any) => {
             What We Offer:
           </p>
           <div className="text-[18px] leading-tight">
-            We offer an easy, customizable DIY solution based on your pet('s) unique move. This solution is designed to provide clear-cut, simple instructions, and options, and advise you of requirements for your pet(’s) transport.
+            We offer an easy, customizable DIY solution based on your pet(&apos;s) unique move. This solution is designed to provide clear-cut, simple instructions, and options, and advise you of requirements for your pet(&apos;s) transport.
           </div>
         </section>
       </div>
