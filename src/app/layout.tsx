@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { createTheme, MantineProvider } from '@mantine/core';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import '@mantine/core/styles.css';
@@ -14,10 +13,6 @@ export const metadata: Metadata = {
   description: "DIY Pet Shipping Consultants",
 };
 
-const theme = createTheme({
-  /** Put your mantine theme override here */
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,11 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} overflow-x-hidden`}>
-        <MantineProvider theme={theme}>
-          <Header />
-          {children}
-          <Footer />
-        </MantineProvider>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
