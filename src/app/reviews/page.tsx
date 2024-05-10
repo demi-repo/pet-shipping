@@ -78,7 +78,7 @@ const Reviews = (props: any) => {
             </SwiperSlide>
             <SwiperSlide>
               <FavCard
-                src="./pets/Cat.jpg"
+                src="./pets/cat.jpg"
                 title="Cat"
               />
             </SwiperSlide>
