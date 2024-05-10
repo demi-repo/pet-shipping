@@ -2,9 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import EarPieceIcon from "@/components/icons/earpieceIcon";
-import MailIcon from "@/components/icons/mailIcon";
-import ChatIcon from "@/components/icons/chatIcon";
 
 const Login = (props: any) => {
   const [select, setSelect] = useState(false);
