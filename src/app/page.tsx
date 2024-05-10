@@ -8,15 +8,7 @@ import { Text } from '@mantine/core';
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col">
-        <Text
-          size="xl"
-          fw={900}
-          variant="gradient"
-        >
-          Gradient Text
-        </Text>
-      </main>
+      <main className="flex flex-col" />
     </>
   );
 }

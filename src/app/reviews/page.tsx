@@ -25,7 +25,7 @@ const Reviews = (props: any) => {
         <div className="w-full max-w-[1200px] max-h-[400px] md:block hidden">
           <Swiper
             className="w-full h-full"
-            slidesPerView={"4"}
+            slidesPerView={4}
             modules={[Pagination]}
             pagination={{
               clickable: true,
