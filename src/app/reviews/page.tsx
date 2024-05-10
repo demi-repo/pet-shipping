@@ -43,7 +43,7 @@ const Reviews = (props: any) => {
                   title="Bunny"
                 />
                 <FavCard
-                  src="./pets/Cat.jpg"
+                  src="./pets/cat.jpg"
                   title="Cat"
                 />
                 <FavCard
