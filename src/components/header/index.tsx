@@ -262,6 +262,12 @@ export default function Header() {
       </div>
       <nav className="md:flex hidden justify-between gap-10">
         <Link
+          href="/"
+          className="font-medium text-sm cursor-pointer border-b-2 border-transparent hover:border-black"
+        >
+          Home
+        </Link>
+        <Link
           href="/about"
           className="font-medium text-sm cursor-pointer border-b-2 border-transparent hover:border-black"
         >
@@ -283,13 +289,13 @@ export default function Header() {
           href="/shop"
           className="font-medium text-sm cursor-pointer border-b-2 border-transparent hover:border-black"
         >
-          Payments 
+          Payments
         </Link>
         <Link
           href="/product"
           className="font-medium text-sm cursor-pointer border-b-2 border-transparent hover:border-black"
         >
-          Testimonials / FAQ   
+          Testimonials / FAQ
         </Link>
 
       </nav>

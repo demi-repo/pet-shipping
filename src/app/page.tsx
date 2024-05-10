@@ -3,12 +3,12 @@
 import React, { useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Text } from '@mantine/core';
 
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col" />
+      <main className="flex flex-col">
+      </main>
     </>
   );
 }
