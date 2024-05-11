@@ -39,7 +39,7 @@ export default function Home() {
             <div className="max-w-3xl">
               <h1 className="text-5xl font-extrabold" style={{ fontFamily: "Nunito, sans-serif" }}>The World&apos;s Best Consulting Serivce for Pet Shipping</h1>
               <p className="text-lg py-12">Our mission is to make pet transport as smooth as possible. Our service offers easy-to-follow instructions, various options, and advice to ensure a seamless pet transport process.</p>
-              <button type="button" className="w-52 h-20 focus:outline-none text-2xl text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Our Service</button>
+              <a href="/#services" className="w-52 h-20 focus:outline-none text-2xl text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Our Service</a>
             </div>
             <div className="absolute top-80 right-24">
               <img src="./assets/home/3.png" />
