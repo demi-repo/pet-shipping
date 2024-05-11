@@ -1,6 +1,6 @@
 "use client";
 
-const FavCard = (props: any) => {
+const MapCard = (props: any) => {
   const {
     src = "",
     title = "",
@@ -49,4 +49,4 @@ const FavCard = (props: any) => {
   );
 };
 
-export default FavCard;
+export default MapCard;
