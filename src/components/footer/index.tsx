@@ -17,8 +17,8 @@ export default function Footer() {
                           About us                                            </div>
                         <div className="flex ml-2 group-hover:-translate-y-px transition-all">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                           </svg>
                         </div>
                         <span className="w-0 transition-all group-hover:w-full h-[2px] rounded-full bg-black absolute top-full left-0"></span>
@@ -30,8 +30,8 @@ export default function Footer() {
                           Pet types                                            </div>
                         <div className="flex ml-2 group-hover:-translate-y-px transition-all">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                           </svg>
                         </div>
                         <span className="w-0 transition-all group-hover:w-full h-[2px] rounded-full bg-black absolute top-full left-0"></span>
@@ -43,8 +43,8 @@ export default function Footer() {
                           Destinations                                          </div>
                         <div className="flex ml-2 group-hover:-translate-y-px transition-all">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                           </svg>
                         </div>
                         <span className="w-0 transition-all group-hover:w-full h-[2px] rounded-full bg-black absolute top-full left-0"></span>
@@ -56,8 +56,8 @@ export default function Footer() {
                           Services                                           </div>
                         <div className="flex ml-2 group-hover:-translate-y-px transition-all">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                           </svg>
                         </div>
                         <span className="w-0 transition-all group-hover:w-full h-[2px] rounded-full bg-black absolute top-full left-0"></span>
@@ -69,8 +69,8 @@ export default function Footer() {
                           Things to consider                                           </div>
                         <div className="flex ml-2 group-hover:-translate-y-px transition-all">
                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.66663 11.3332L11.3333 4.6665" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                            <path d="M4.66663 4.6665H11.3333V11.3332" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                           </svg>
                         </div>
                         <span className="w-0 transition-all group-hover:w-full h-[2px] rounded-full bg-black absolute top-full left-0"></span>
