@@ -16,7 +16,7 @@ const FavCard = (props: any) => {
       <div className="overflow-hidden rounded-[1rem] w-full">
         <div className="w-full relative overflow-hidden rounded-[1rem]">
           <div className="transition-all duration-300 scale-100 group-hover:scale-110">
-            <img src={src} alt="aspect-[270/224] object-cover w-full"></img>
+            <img loading="lazy" src={src} alt="aspect-[270/224] object-cover w-full"></img>
           </div>
           <div className="absolute transition-all w-full h-full top-0 left-0 bg-black opacity-0 group-hover:opacity-20" />
           <div className="absolute transition-all w-full h-full top-0 left-0 bg-transparent flex flex-col p-4">

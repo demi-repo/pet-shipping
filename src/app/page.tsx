@@ -50,8 +50,9 @@ export default function Home() {
     <>
       <main>
         <div id="home" className=" absolute top-0 w-0" />
-        <section className="bg-[#E5E7EB] items-start px-20 text-white min-h-[883px] max-h-[963px] max-md:px-5">
+        <section className="bg-[#E5E7EB] items-start px-20  text-white min-h-[883px] max-h-[963px] max-md:px-5">
           <Image
+            loading="lazy"
             src={background}
             alt="Hero background"
             className="object-cover absolute inset-0 size-full"
@@ -65,7 +66,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section id="aboutus" className="flex justify-center relative bg-[#E5E7EB] h-[632px] rounded-bl-[150px] scroll-mt-24">
+        <section id="aboutus" className=" dark:text-black flex justify-center relative bg-[#E5E7EB] h-[632px] rounded-bl-[150px] scroll-mt-24">
           <div className=" max-w-[1600] ml-36 mr-36 pt-9  flex flex-wrap items-center text-center">
             <div className="w-full md:w-2/5 lg:w-3/5 px-4 text-center md:text-left lg:pl-12">
               <div className="box-border">
@@ -112,11 +113,11 @@ export default function Home() {
               <p className="text-5xl">Pet <span className="text-[#4878D0]"> Types</span></p>
             </div>
           </div>
-          <div className="h-screen w-full">
+          <div className="h-[632px] w-full">
             <LayoutGrid cards={cards} />
           </div>
         </section>
-        <section id="destinations" className="w-full scroll-mt-24">
+        <section id="destinations" className=" dark:text-black w-full scroll-mt-24">
           <GlobeDemo />
         </section>
         <section id="services" className="flex pt-5 justify-center w-full scroll-mt-24">
@@ -129,9 +130,9 @@ export default function Home() {
             <HoverEffect items={projects} />
           </div>
         </section>
-        <section id="considers" className="flex justify-center pt-5 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
+        <section id="considers" className="dark:text-black flex justify-center pt-5 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
           <div className=" max-w-7xl ml-36 mr-36  flex flex-wrap items-center text-center">
-            <div className=" text-center items-center w-full">
+            <div className=" text-center mt-10 items-center w-full">
               <p className="text-5xl  text-[#4878D0]">Things <span className="text-[#4878D0]"> to Consider </span></p>
               <br />
             </div>
@@ -162,10 +163,10 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-3/5 lg:w-1/2 px-12">
-              <img src="./assets/considering/1.jpg" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
+              <img src="./assets/considering/1.jpg" loading="lazy" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
             </div>
             <div className="w-full md:w-3/5 lg:w-1/2 px-12 py-4">
-              <img src="./assets/considering/2.jpg" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
+              <img src="./assets/considering/2.jpg" loading="lazy" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
               <div className="text-xl">
@@ -196,13 +197,13 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-3/5 lg:w-1/2 px-12 py-4">
-              <img src="./assets/considering/3.jpg" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
+              <img src="./assets/considering/3.jpg" alt="editor" loading="lazy" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
             </div>
           </div>
         </section>
         <section className="flex justify-center w-full scroll-mt-24">
           <div className=" max-w-[1600] ml-36 mr-36 ">
-            <img src="./assets/payment.png" />
+            <img src="./assets/payment.png" loading="lazy" />
           </div>
         </section>
         <div className="z-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
@@ -213,18 +214,12 @@ export default function Home() {
                 <div className="w-full md:w-1/3 flex p-2.5">
                   <article className="w-full flex flex-col bg-white p-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                     <div className="flex items-center space-x-4">
-                      <div className="w-14 aspect-square">
-                        <img decoding="async" loading="lazy" alt="" src="https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/10/image-3-2-50x50.png?lossy=0&amp;strip=1&amp;webp=1" className="w-full h-full object-cover object-center" />
-                      </div>
                       <div className="w-full justify-start items-start space-y-1 flex flex-col">
                         <div className="text-center">
                           <ul className="flex items-center space-x-1 text-sm text-primary"><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li></ul>                                </div>
                         <h1 className="text-sm">
                           Daniel Turner                                </h1>
                       </div>
-                    </div>
-                    <div className="mt-4 aspect-[1.5/1] overflow-hidden">
-                      <img decoding="async" loading="lazy" alt="Review image by Daniel Turner" src="https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/11/Tucker-the-dog-transported-by-Global-Pet-Relocation-500x399.jpg?lossy=0&amp;strip=1&amp;webp=1" className="h-full object-cover object-center w-full" />
                     </div>
                     <div className="text-left mt-4 text-sm">
                       <h1 className="font-semibold">
@@ -237,18 +232,12 @@ export default function Home() {
                 <div className="w-full md:w-1/3 flex p-2.5">
                   <article className="w-full flex flex-col bg-white p-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                     <div className="flex items-center space-x-4">
-                      <div className="w-14 aspect-square">
-                        <img decoding="async" loading="lazy" alt="" src="https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/10/image-3-50x50.png?lossy=0&amp;strip=1&amp;webp=1" className="w-full h-full object-cover object-center" />
-                      </div>
                       <div className="w-full justify-start items-start space-y-1 flex flex-col">
                         <div className="text-center">
                           <ul className="flex items-center space-x-1 text-sm text-primary"><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li></ul>                                </div>
                         <h1 className="text-sm">
                           Rita Hartley                                </h1>
                       </div>
-                    </div>
-                    <div className="mt-4 aspect-[1.5/1] overflow-hidden">
-                      <img decoding="async" loading="lazy" alt="Review image by Rita Hartley" src="https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/10/Arlo-Woody-Dogs-Transported-by-Global-Pet-Relocation-1-500x499.jpg?lossy=0&amp;strip=1&amp;webp=1" className="h-full object-cover object-center w-full" />
                     </div>
                     <div className="text-left mt-4 text-sm">
                       <h1 className="font-semibold">
@@ -261,18 +250,12 @@ export default function Home() {
                 <div className="w-full md:w-1/3 flex p-2.5">
                   <article className="w-full flex flex-col bg-white p-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                     <div className="flex items-center space-x-4">
-                      <div className="w-14 aspect-square">
-                        <img decoding="async" loading="lazy" alt="" src="https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/10/download.png?lossy=0&amp;strip=1&amp;webp=1" className="w-full h-full object-cover object-center" />
-                      </div>
                       <div className="w-full justify-start items-start space-y-1 flex flex-col">
                         <div className="text-center">
                           <ul className="flex items-center space-x-1 text-sm text-primary"><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li></ul>                                </div>
                         <h1 className="text-sm">
                           Thomas G                                </h1>
                       </div>
-                    </div>
-                    <div className="mt-4 aspect-[1.5/1] overflow-hidden">
-                      <img decoding="async" loading="lazy" alt="Review image by Thomas G" src="https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/10/Lumi-Vesi-Pet-Cats-Shipped-by-Global-Pet-Relocation.png?lossy=0&amp;strip=1&amp;webp=1" className="h-full object-cover object-center w-full" />
                     </div>
                     <div className="text-left mt-4 text-sm">
                       <h1 className="font-semibold">
@@ -389,7 +372,7 @@ const cards = [
   {
     id: 2,
     content: <SkeletonTwo />,
-    className: "col-span-2",
+    className: "col-span-1",
     thumbnail:
       "/assets/pets/dog1.jpg"
   },
@@ -403,14 +386,14 @@ const cards = [
   {
     id: 4,
     content: <SkeletonFour />,
-    className: "md:col-span-2",
+    className: "md:col-span-1",
     thumbnail:
       "/assets/pets/Ferret.jpg"
   },
   {
     id: 5,
     content: <SkeletonFive />,
-    className: "md:col-span-2",
+    className: "md:col-span-1",
     thumbnail:
       "/assets/pets/Bunny.jpg"
   },
@@ -431,7 +414,7 @@ const cards = [
   {
     id: 8,
     content: <SkeletonEight />,
-    className: "md:col-span-2",
+    className: "md:col-span-1",
     thumbnail:
       "/assets/pets/Iguana.jpg"
   }
@@ -825,11 +808,11 @@ export const GlobeDemo = () => {
   ];
 
   return (
-    <div className="py-20 h-screen md:h-auto dark:bg-black bg-[#E5E7F0] rounded-br-[150px] relative w-full">
+    <div className="py-20 h-screen md:h-auto bg-[#E5E7F0] rounded-br-[150px] relative w-full">
       <div className="max-w-[1600] w-full flex flex-row relative overflow-hidden h-full md:h-[40rem] px-40">
         <div className="absolute h-full flex flex-row items-center">
           <div className="text-2xl">
-            <h2 className="text-center dark:text-white text-5xl ">
+            <h2 className="text-center text-5xl ">
               Destinations
             </h2>
             <div className=" bg-[#E5E7F0] border-t-2 mt-4 border-[rgb(176,190,219)] rounded-b text-[#4878D0] px-4 py-3 shadow-md" role="alert">
@@ -876,7 +859,7 @@ export const GlobeDemo = () => {
             </div>
           </div>
         </div>
-        <div className="relative w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black z-40" />
+        <div className="relative w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent z-40" />
         <div className="relative w-full h-full md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />;
         </div>
@@ -935,5 +918,15 @@ export const projects = [
     title: "Airline Accepted Crates & Where to Get Them",
     description:
       "Which crates will the airline accept for both in-cabin and cargo and where to get them. "
+  },
+  {
+    title: "International or Domestic Document Reviews",
+    description:
+      "Customized DIY How-To for Your Pet’s International or Domestic Transport. "
+  },
+  {
+    title: "International or Domestic Health Certificate Pre-Fills",
+    description:
+      "Customized DIY How-To for Your Pet’s International or Domestic Transport. "
   }
 ];

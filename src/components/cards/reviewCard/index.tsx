@@ -9,7 +9,7 @@ const ReviewCard = (props: any) => {
     <article className="cursor-pointer w-full h-max rounded-lg overflow-hidden ">
       <div className="bg-[#ede8e1] w-full h-max gap-9 flex flex-col items-center p-10">
         <div className="flex">
-          <img src={src} />
+          <img loading="lazy" src={src} />
           <div className="flex flex-col gap-1">
             <h5>{title}</h5>
             <div className="flex gap-2">
