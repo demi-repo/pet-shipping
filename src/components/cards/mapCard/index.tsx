@@ -27,7 +27,7 @@ const MapCard = (props: any) => {
       </div>
       <div className="flex flex-row justify-between gap-1">
         <div className="flex flex-col items-start">
-          <p className="font-bold leading-6 md:text-base text-xs">{title}</p>
+          <p className=" leading-6 md:text-base text-xs">{title}</p>
           <p className="font-medium md:text-sm text-[11px]">
             {/* Starts from ${startCost} */}
           </p>

@@ -25,7 +25,7 @@ const Login = (props: any) => {
             </div>
             <div className="lg:mx-[60px] lg:my-[60px] w-full lg:max-w-[505px]">
               <div className="flex flex-col gap-[32px]">
-                <p className="font-bold	text-[40px]">Welcome back!</p>
+                <p className="	text-[40px]">Welcome back!</p>
                 <form>
                   <div className="flex flex-col gap-y-[24px]">
                     <div className="flex flex-col items-start w-full gap-2">
@@ -92,7 +92,7 @@ const Login = (props: any) => {
                     </div>
                     <button
                       type="submit"
-                      className="flex flex-row pb-4 pt-4 gap-1 justify-center items-center pr-5 pl-5 bg-black hover:opacity-[.8] rounded-[32px] text-center w-full font-bold text-base text-white"
+                      className="flex flex-row pb-4 pt-4 gap-1 justify-center items-center pr-5 pl-5 bg-black hover:opacity-[.8] rounded-[32px] text-center w-full  text-base text-white"
                     >
                       Sign in
                       <svg

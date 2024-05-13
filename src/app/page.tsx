@@ -48,35 +48,30 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col" >
+      <main>
         <div id="home" className=" absolute top-0 w-0" />
-        <section className="flex overflow-hidden flex-col items-start p-20 font-semibold text-white min-h-[883px] h-screen max-md:px-5">
-          <div className=" absolute top-0 left-0 w-full h-screen">
-            <Image
-              src={background}
-              alt="Hero background"
-              className="object-cover absolute inset-0 size-full"
-            />
+        <section className="bg-[#E5E7EB] items-start px-20 text-white min-h-[883px] max-h-[963px] max-md:px-5">
+          <Image
+            src={background}
+            alt="Hero background"
+            className="object-cover absolute inset-0 size-full"
+          />
+          <div className="flex flex-col items-center left-16 bottom-1/4 absolute">
+            <h1 className="animate-fade-right animate-once animate-duration-[3000ms] animate-ease-linear relative mt-40 text-8xl text-pretty tracking-wider leading-[60px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">
+              DIY Pet Shipping Consults
+            </h1>
+            <p className="animate-fade-up animate-duration-3000 animate-ease-linear animate-normal animate-fill-forwards relative mt-20 text-5xl text-pretty leading-6 max-md:max-w-full">
+              Guiding Your Pet’s Journey, Every Step of the Way!
+            </p>
           </div>
-          <h1 className="animate-fade-right animate-once animate-duration-[3000ms] animate-ease-linear relative mt-40 text-6xl text-pretty tracking-wider leading-[60px] w-[630px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">
-            DIY Pet Shipping
-          </h1>
-          <p className="animate-fade-up animate-duration-3000 animate-ease-linear animate-normal animate-fill-forwards relative mt-5 text-xl text-pretty leading-6 w-[630px] max-md:max-w-full">
-            Welcome to our family-owned, pet-loving platform!<br />
-            Our mission is to make pet transport as smooth as possible.<br /> We provide a DIY solution that’s tailored to your pet’s unique requirements. Our service offers easy-to-follow instructions, various options, and advice to ensure a seamless pet transport process.
-          </p>
-          <div id="aboutus" className="absolute bottom-0 mb-24"></div>
         </section>
-        <section className="page-section flex justify-center relative px-36">
-          <div className=" max-w-7xl flex flex-wrap items-center text-center">
-            <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
-              <h3 className=" font-bold text-5xl text-center">
-                About Us
-              </h3>
+        <section id="aboutus" className="flex justify-center relative bg-[#E5E7EB] h-[632px] rounded-bl-[150px] scroll-mt-24">
+          <div className=" max-w-[1600] ml-36 mr-36 pt-9  flex flex-wrap items-center text-center">
+            <div className="w-full md:w-2/5 lg:w-3/5 px-4 text-center md:text-left lg:pl-12">
               <div className="box-border">
                 <ul className="relative">
                   <li>
-                    <div className=" text-[#7c58d3] text-xl font-bold px-6 py-6">Who Are We?
+                    <div className=" text-5xl px-6">Who <span className="text-[#4878D0]">we are</span>
                     </div>
                     <div>
                       <div className="relative px-6 text-lg leading-6 mb-0">
@@ -85,7 +80,7 @@ export default function Home() {
                     </div>
                   </li>
                   <li>
-                    <div className=" text-[#7c58d3] text-xl font-bold px-6 py-6">Why This Service?
+                    <div className=" text-5xl px-6 mt-6">Why<span className="text-[#4878D0]"> this service?</span>
                     </div>
                     <div>
                       <div className="relative px-6 text-lg leading-6 mb-0">
@@ -94,7 +89,7 @@ export default function Home() {
                     </div>
                   </li>
                   <li>
-                    <div className=" text-[#7c58d3] text-xl font-bold px-6 py-6">What We Offer:
+                    <div className=" text-5xl px-6 mt-6">What <span className="text-[#4878D0]"> we offer:</span>
                     </div>
                     <div>
                       <div className="relative px-6 text-lg leading-6 mb-0">
@@ -105,43 +100,39 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="w-full md:w-3/5 lg:w-1/2 px-4 animate-fade-left animate-duration-[2000ms] animate-ease-linear animate-normal animate-fill-forwards">
-              <ImagesSlider className="h-[40rem]" images={images}>
+            <div className="w-full md:w-3/5 lg:w-2/5 px-4 animate-fade-left animate-duration-[2000ms] animate-ease-linear animate-normal animate-fill-forwards">
+              <ImagesSlider className="h-[33rem]" images={images}>
               </ImagesSlider>
             </div>
           </div>
-          <div id="petTypes" className="absolute bottom-0 mb-24 "></div>
         </section>
-        <section className="page-section px-2 w-full h-full">
+        <section id="petTypes" className="px-2 pt-5 w-full h-full scroll-mt-24">
           <div className="w-full"  >
             <div className=" text-center items-center w-full">
-              <p className="text-5xl mt-2 font-bold text-[#7c58d3]">Pet Types </p>
-              <br />
+              <p className="text-5xl">Pet <span className="text-[#4878D0]"> Types</span></p>
             </div>
           </div>
           <div className="h-screen w-full">
             <LayoutGrid cards={cards} />
           </div>
         </section>
-        <section id="destinations" className="page-section w-full">
+        <section id="destinations" className="w-full scroll-mt-24">
           <GlobeDemo />
         </section>
-        <div id="services" className=" h-36 w-0" />
-        <section className="page-section flex justify-center w-full">
+        <section id="services" className="flex pt-5 justify-center w-full scroll-mt-24">
           <div className=" max-w-7xl">
             <div className=" text-center items-center w-full">
-              <p className="text-5xl font-bold text-[#7c58d3]">Services</p>
+              <p className="text-5xl  text-[#4878D0]">Services</p>
               <br />
               <p className="text-xl">We will consult with you and provide you with customized DIY options and requirements for your pet(s) move. <br />Topics we will cover include the below:</p>
             </div>
             <HoverEffect items={projects} />
           </div>
         </section>
-        <div id="considers" className=" h-36 w-0" />
-        <section className="page-section flex justify-center w-full">
+        <section id="considers" className="flex justify-center pt-5 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
           <div className=" max-w-7xl flex flex-wrap items-center text-center">
             <div className=" text-center items-center w-full">
-              <p className="text-5xl font-bold text-[#7c58d3]">Things To Consider</p>
+              <p className="text-5xl  text-[#4878D0]">Things <span className="text-[#4878D0]"> to Consider </span></p>
               <br />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
@@ -211,15 +202,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div id="payments" className=" h-36 w-0" />
-        <section className="page-section flex justify-center w-full">
+        <section className="flex justify-center w-full scroll-mt-24">
           <div className=" max-w-7xl">
             <img src="./assets/payment.png" />
           </div>
         </section>
         <div className="z-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
-
-          <section className="py-28">
+          <section className="pt-5">
             <div className="container mx-auto text-center">
 
               <div className="w-full reviews-slider flex justify-center mt-4">
@@ -316,21 +305,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-              <div className="flex items-center justify-center mt-0 md:mt-8 mb-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <div className="text-sm font-semibold">
-                  Rated Excellent: 4.9 | 163            </div>
-                <div className="flex items-center ml-4">
-                  <ul className="flex items-center space-x-1 text-sm text-primary"><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li><li><i className="fa fa-star" aria-hidden="true"></i></li></ul>                <img decoding="async" loading="lazy" alt="Decorative image" src="https://www.globalpetrelocation.com/wp-content/themes/GlobalPetRelocation/assets/images/social/google.svg" width="24" height="24" className="w-6 ml-4" />
-                </div>
-              </div>
-              <div className="flex justify-center mt-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-
-                <div className="flex">
-                  <a href="#home" className="btn pink-btn flex w-auto" target="_blank">
-                    See our reviews on Google        </a>
-                </div>
-              </div>
             </div>
           </section >
 
@@ -343,7 +317,7 @@ export default function Home() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Black Lab</p>
+      <p className=" text-4xl text-white">Black Lab</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -352,7 +326,7 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Yellow Lab Pup</p>
+      <p className=" text-4xl text-white">Yellow Lab Pup</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -360,7 +334,7 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Cat</p>
+      <p className=" text-4xl text-white">Cat</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -368,7 +342,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Ferret</p>
+      <p className=" text-4xl text-white">Ferret</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -376,7 +350,7 @@ const SkeletonFour = () => {
 const SkeletonFive = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Bunny</p>
+      <p className=" text-4xl text-white">Bunny</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -384,7 +358,7 @@ const SkeletonFive = () => {
 const SkeletonSix = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Turtle</p>
+      <p className=" text-4xl text-white">Turtle</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -392,7 +366,7 @@ const SkeletonSix = () => {
 const SkeletonSeven = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Snake</p>
+      <p className=" text-4xl text-white">Snake</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -400,7 +374,7 @@ const SkeletonSeven = () => {
 const SkeletonEight = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Iguana</p>
+      <p className=" text-4xl text-white">Iguana</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -853,52 +827,52 @@ export const GlobeDemo = () => {
   ];
 
   return (
-    <div className="py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
+    <div className="py-20 h-screen md:h-auto dark:bg-black bg-[#E5E7F0] rounded-br-[150px] relative w-full">
       <div className="max-w-7xl mx-auto w-full flex flex-row relative overflow-hidden h-full md:h-[40rem] px-4">
         <div className="absolute h-full flex flex-row items-center">
           <div className="text-2xl">
-            <h2 className="text-center mt-12 dark:text-white text-5xl font-bold text-[#7c58d3]">
+            <h2 className="text-center dark:text-white text-5xl ">
               Destinations
             </h2>
-            <div className=" bg-white border-t-2 mt-4 border-[#2d3139] rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+            <div className=" bg-[#E5E7F0] border-t-2 mt-4 border-[rgb(176,190,219)] rounded-b text-[#4878D0] px-4 py-3 shadow-md" role="alert">
               <div className="flex">
                 <div>
-                  <p className="font-bold">•	North America</p>
+                  <p className="">•	North America</p>
                 </div>
               </div>
             </div>
-            <div className=" bg-white border-t-2 mt-4 border-[#2d3139] rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+            <div className=" bg-[#E5E7F0] border-t-2 mt-4 border-[rgb(176,190,219)] rounded-b text-[#4878D0] px-4 py-3 shadow-md" role="alert">
               <div className="flex">
                 <div>
-                  <p className="font-bold">•	North America to/from Asia</p>
+                  <p className="">•	North America to/from Asia</p>
                 </div>
               </div>
             </div>
-            <div className=" bg-white border-t-2 mt-4 border-[#2d3139] rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+            <div className=" bg-[#E5E7F0] border-t-2 mt-4 border-[rgb(176,190,219)] rounded-b text-[#4878D0] px-4 py-3 shadow-md" role="alert">
               <div className="flex">
                 <div>
-                  <p className="font-bold">•	North America to/from Africa</p>
+                  <p className="">•	North America to/from Africa</p>
                 </div>
               </div>
             </div>
-            <div className=" bg-white border-t-2 mt-4 border-[#2d3139] rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+            <div className=" bg-[#E5E7F0] border-t-2 mt-4 border-[rgb(176,190,219)] rounded-b text-[#4878D0] px-4 py-3 shadow-md" role="alert">
               <div className="flex">
                 <div>
-                  <p className="font-bold">•	North America to/from Europe</p>
+                  <p className="">•	North America to/from Europe</p>
                 </div>
               </div>
             </div>
-            <div className=" bg-white border-t-2 mt-4 border-[#2d3139] rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+            <div className=" bg-[#E5E7F0] border-t-2 mt-4 border-[rgb(176,190,219)] rounded-b text-[#4878D0] px-4 py-3 shadow-md" role="alert">
               <div className="flex">
                 <div>
-                  <p className="font-bold">•	North America to/from South America</p>
+                  <p className="">•	North America to/from South America</p>
                 </div>
               </div>
             </div>
-            <div className=" bg-white border-t-2 mt-4 border-[#2d3139] rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+            <div className=" bg-[#E5E7F0] border-t-2 mt-4 border-[rgb(176,190,219)] rounded-b text-[#4878D0] px-4 py-3 shadow-md" role="alert">
               <div className="flex">
                 <div>
-                  <p className="font-bold">•	North America to/from the United Kingdom</p>
+                  <p className="">•	North America to/from the United Kingdom</p>
                 </div>
               </div>
             </div>

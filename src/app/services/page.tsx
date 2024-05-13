@@ -14,7 +14,7 @@ const Contact = (props: any) => {
                 <EarPieceIcon className="text-black" />
               </div>
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-sm text-black uppercase">
+                <span className=" text-sm text-black uppercase">
                   Call Me
                 </span>
                 <span className="font-medium text-black">
@@ -28,7 +28,7 @@ const Contact = (props: any) => {
                 <MailIcon className="text-black" />
               </div>
               <div className="flex flex-col gap-2">
-                <span className="font-bold text-sm text-black uppercase">
+                <span className=" text-sm text-black uppercase">
                   Email
                 </span>
                 <span className="font-medium text-black">
@@ -45,7 +45,7 @@ const Contact = (props: any) => {
           <div className="flex flex-col lg:col-span-3 col-span-5 gap-10 w-full max-w-screen-2xl text-black">
             <div className="flex flex-col w-full rounded-2xl h-max gap-5">
               <div className="flex justify-between">
-                <span className="font-bold md:text-5xl text-3xl max-w-4xl">
+                <span className=" md:text-5xl text-3xl max-w-4xl">
                   Consulting Services
                 </span>
               </div>
@@ -281,7 +281,7 @@ const Contact = (props: any) => {
             </div>
             <div className="flex flex-col w-full rounded-2xl h-max gap-5">
               <div className="flex justify-between">
-                <span className="font-bold md:text-5xl text-3xl max-w-4xl">
+                <span className=" md:text-5xl text-3xl max-w-4xl">
                   Things to Consider
                 </span>
               </div>

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="bg-tertiary bg-[#e6f3e6]">
+      <div className="bg-tertiary bg-[#E5E7F0]">
         <div className="container px-4 mx-auto py-16">
           <div className="flex mb-8">
           </div>

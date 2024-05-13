@@ -20,12 +20,12 @@ const ReviewCard = (props: any) => {
           </div>
         </div>
         <div className="flex flex-col gap-9 max-w-[548px] justify-center items-center">
-          <h6 className="font-bold md:text-3xl text-xl">&quot;{content}&quot;</h6>
-          <p className="font-bold text-sm uppercase">{name}</p>
+          <h6 className=" md:text-3xl text-xl">&quot;{content}&quot;</h6>
+          <p className=" text-sm uppercase">{name}</p>
         </div>
         <div>
           <a className="block max-w-[312px] md:w-[312px] w-max">
-            <div className="flex transition-all h-fit w-full md:px-5 px-3 md:py-3 py-1 border-2 border-black bg-transparent items-center justify-center md:gap-1 gap-[1px] rounded-[2rem] cursor-pointer hover:text-[#fffcf8] hover:bg-black font-bold md:text-base text-sm">
+            <div className="flex transition-all h-fit w-full md:px-5 px-3 md:py-3 py-1 border-2 border-black bg-transparent items-center justify-center md:gap-1 gap-[1px] rounded-[2rem] cursor-pointer hover:text-[#fffcf8] hover:bg-black  md:text-base text-sm">
               Read 70k+ more reviews
               <svg
                 xmlns="http://www.w3.org/2000/svg"

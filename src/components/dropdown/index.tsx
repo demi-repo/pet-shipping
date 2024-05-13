@@ -40,12 +40,12 @@ const Dropdwon = (props: any) => {
           type === "rate" && value != "All" ? (
             <ReactStars value={value} edit={false} />
           ) : (
-            <span className="transition-all text-black group-hover:text-[#00000080] text-[13px] font-bold leading-[1.54] text-ellipsis	overflow-hidden whitespace-nowrap">
+            <span className="transition-all text-black group-hover:text-[#00000080] text-[13px]  leading-[1.54] text-ellipsis	overflow-hidden whitespace-nowrap">
               {value}
             </span>
           )
         ) : (
-          <span className="transition-all text-black group-hover:text-[#00000080] text-[13px] font-bold leading-[1.54] text-ellipsis	overflow-hidden whitespace-nowrap">
+          <span className="transition-all text-black group-hover:text-[#00000080] text-[13px]  leading-[1.54] text-ellipsis	overflow-hidden whitespace-nowrap">
             {placeholder}
           </span>
         )}
@@ -58,7 +58,7 @@ const Dropdwon = (props: any) => {
       >
         <ul className="p-1 flex flex-col gap-[2px] w-full shadow-lg bg-slate-100 text-[13px]">
           <li
-            className="font-bold transition-all h-[34px] bg-slate-100 hover:bg-slate-200 w-full flex p-2 cursor-pointer items-center"
+            className=" transition-all h-[34px] bg-slate-100 hover:bg-slate-200 w-full flex p-2 cursor-pointer items-center"
             onClick={() => onSelectChange("All", -1)}
           >
             All

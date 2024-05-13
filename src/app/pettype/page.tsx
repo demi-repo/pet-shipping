@@ -18,7 +18,7 @@ const Reviews = (props: any) => {
     <main className="w-full h-full">
       <section className="page-section lg:px-6 md:px-4 px-2 flex flex-col gap-9 justify-center items-center">
         <div className="flex flex-col justify-center items-center md:gap-4 gap-0">
-          <p className="md:text-6xl text-3xl font-bold">Pet Types</p>
+          <p className="md:text-6xl text-3xl ">Pet Types</p>
           <br />
         </div>
 
@@ -190,7 +190,7 @@ const Reviews = (props: any) => {
           <div className="flex flex-col gap-10 lg:w-3/5 w-full max-w-screen-2xl text-black">
             <div className="flex flex-col w-full rounded-2xl h-max gap-5">
               <div className="flex justify-between">
-                <span className="font-bold md:text-5xl text-3xl max-w-4xl">
+                <span className=" md:text-5xl text-3xl max-w-4xl">
                   Destinations
                 </span>
               </div>
