@@ -74,7 +74,7 @@ export default function Home() {
                     <div className=" text-5xl px-6">Who <span className="text-[#4878D0]">we are</span>
                     </div>
                     <div>
-                      <div className="relative px-6 text-lg leading-6 mb-0">
+                      <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
                         <div className="text">We’re a family-owned pet-loving company. We’ve been shipping pets domestically and internationally for over two decades now.</div>
                       </div>
                     </div>
@@ -83,7 +83,7 @@ export default function Home() {
                     <div className=" text-5xl px-6 mt-6">Why<span className="text-[#4878D0]"> this service?</span>
                     </div>
                     <div>
-                      <div className="relative px-6 text-lg leading-6 mb-0">
+                      <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
                         <div className="text">Our consulting service was born from a desire to provide an alternative to the high-priced costs of hiring a full-service company to ship your pet(s). </div>
                       </div>
                     </div>
@@ -92,7 +92,7 @@ export default function Home() {
                     <div className=" text-5xl px-6 mt-6">What <span className="text-[#4878D0]"> we offer:</span>
                     </div>
                     <div>
-                      <div className="relative px-6 text-lg leading-6 mb-0">
+                      <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
                         <div className="text">We offer an easy, customizable DIY solution based on your pet(&apos;s) unique move. This solution is designed to provide clear-cut, simple instructions, and options, and advise you of requirements for your pet(&apos;s) transport. </div>
                       </div>
                     </div>
@@ -120,7 +120,7 @@ export default function Home() {
           <GlobeDemo />
         </section>
         <section id="services" className="flex pt-5 justify-center w-full scroll-mt-24">
-          <div className=" max-w-7xl">
+          <div className=" max-w-[1600] ml-36 mr-36 ">
             <div className=" text-center items-center w-full">
               <p className="text-5xl  text-[#4878D0]">Services</p>
               <br />
@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </section>
         <section id="considers" className="flex justify-center pt-5 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
-          <div className=" max-w-7xl flex flex-wrap items-center text-center">
+          <div className=" max-w-[1600] ml-36 mr-36  flex flex-wrap items-center text-center">
             <div className=" text-center items-center w-full">
               <p className="text-5xl  text-[#4878D0]">Things <span className="text-[#4878D0]"> to Consider </span></p>
               <br />
@@ -203,7 +203,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex justify-center w-full scroll-mt-24">
-          <div className=" max-w-7xl">
+          <div className=" max-w-[1600] ml-36 mr-36 ">
             <img src="./assets/payment.png" />
           </div>
         </section>
@@ -828,7 +828,7 @@ export const GlobeDemo = () => {
 
   return (
     <div className="py-20 h-screen md:h-auto dark:bg-black bg-[#E5E7F0] rounded-br-[150px] relative w-full">
-      <div className="max-w-7xl mx-auto w-full flex flex-row relative overflow-hidden h-full md:h-[40rem] px-4">
+      <div className="max-w-[1600] w-full flex flex-row relative overflow-hidden h-full md:h-[40rem] px-40">
         <div className="absolute h-full flex flex-row items-center">
           <div className="text-2xl">
             <h2 className="text-center dark:text-white text-5xl ">
@@ -879,7 +879,7 @@ export const GlobeDemo = () => {
           </div>
         </div>
         <div className="relative w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black z-40" />
-        <div className="relative w-full h-full -bottom-16 md:h-full z-10">
+        <div className="relative w-full h-full md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />;
         </div>
       </div>
