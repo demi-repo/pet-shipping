@@ -206,7 +206,7 @@ export default function Home() {
             <img src="./assets/payment.png" loading="lazy" />
           </div>
         </section>
-        <div className="z-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
+        <div className="dark:text-black z-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
           <section className="pt-5">
             <div className="container mx-auto text-center">
 
