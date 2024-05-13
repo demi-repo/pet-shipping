@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </section>
         <section id="considers" className="flex justify-center pt-5 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
-          <div className=" max-w-[1600] ml-36 mr-36  flex flex-wrap items-center text-center">
+          <div className=" max-w-7xl ml-36 mr-36  flex flex-wrap items-center text-center">
             <div className=" text-center items-center w-full">
               <p className="text-5xl  text-[#4878D0]">Things <span className="text-[#4878D0]"> to Consider </span></p>
               <br />
@@ -161,10 +161,10 @@ export default function Home() {
               <div className="box-border">
               </div>
             </div>
-            <div className="w-full md:w-3/5 lg:w-1/2 px-4">
+            <div className="w-full md:w-3/5 lg:w-1/2 px-12">
               <img src="./assets/considering/1.jpg" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
             </div>
-            <div className="w-full md:w-3/5 lg:w-1/2 px-4">
+            <div className="w-full md:w-3/5 lg:w-1/2 px-12 py-4">
               <img src="./assets/considering/2.jpg" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
@@ -194,10 +194,8 @@ export default function Home() {
                   <li>•	What can be in the crate with my pet?</li>
                 </ul>
               </div>
-              <div className="box-border">
-              </div>
             </div>
-            <div className="w-full md:w-3/5 lg:w-1/2 px-4">
+            <div className="w-full md:w-3/5 lg:w-1/2 px-12 py-4">
               <img src="./assets/considering/3.jpg" alt="editor" className="rounded-3xl inline-block shadow-lg border border-merino-400" />
             </div>
           </div>
