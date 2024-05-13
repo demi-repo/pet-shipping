@@ -20,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+      </head>
+      <body className={`${inter.className} overflow-x-hidden`} style={{ fontFamily: "Neue Montreal" }} >
         <Header />
         {children}
         <Footer />
