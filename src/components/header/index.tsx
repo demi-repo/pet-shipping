@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex flex-col justify-center" >
           <div className="flex flex-row text-lg gap-3 place-content-left w-full">
             {/* <div className="h-full flex flex-row items-center"> */}
-            <img src="./assets/logo.svg" className="ml-10 w-32 h-32" />
+            <a className=" cursor-pointer" href="#home"><img src="./assets/logo.svg" className="ml-10 w-32 h-32" /></a>
             {/* </div> */}
             {/* <div className={`${value ? "bg-[#fff] text-[#4878D0] duration-1000" : "bg-none text-white "} cursor-pointer ml-10 py-9 hover:text-[#667085] `}><a href="#home">DIY Pet Shipping Consultants</a></div> */}
             <div className="flex flex-row items-center gap-3">
