@@ -85,7 +85,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-1">
                   <a href="tel:--><!--" className="font-light hover:underline">
-                    •	phone number: 36746792
+                    •	phone number: (888) 202-4660
                   </a>
                 </div>
               </div>
