@@ -8,7 +8,6 @@ import Image from "next/image";
 import background from "../../public/assets/home/background.png"
 import { LayoutGrid } from "../components/gallery/gallery";
 import dynamic from "next/dynamic";
-import { HoverEffect } from "../components/hoverEffect/hoverEffect";
 
 const World = dynamic(() => import("../components/globe/globe").then((m) => m.World), {
   ssr: false,
@@ -18,14 +17,6 @@ const words = `Oxygen gets you high. In a catastrophic emergency, we're taking g
 `;
 
 export default function Home() {
-  const images = [
-    "/assets/home/1.jpg",
-    "/assets/home/2.jpg",
-    "/assets/home/3.jpg",
-    "/assets/home/4.jpg",
-    "/assets/home/5.jpg",
-    "/assets/home/6.jpg",
-  ];
 
   const responsive = {
     desktop: {
@@ -118,20 +109,122 @@ export default function Home() {
         <section id="destinations" className=" dark:text-black w-full scroll-mt-24">
           <GlobeDemo />
         </section>
-        <section id="services" className="flex pt-10 pb-10 justify-center w-full scroll-mt-24">
-          <div className=" max-w-[1600] ml-36 mr-36 ">
+        <section id="services" style={{ background: "#" }} className=" pb-20 relative  scroll-mt-24 ">
+          <div className="w-full py-14">
             <div className=" text-center items-center w-full">
-              <p className="text-5xl  text-[#4878D0]">Services</p>
-              <br />
-              <p className="text-xl">We will consult with you and provide you with customized DIY options and requirements for your pet(s) move. <br />Topics we will cover include the below:</p>
+              <p className="text-5xl">Services <span className="text-[#4878D0]"> We Offer:</span></p>
             </div>
-            <HoverEffect items={projects} />
+          </div>
+          <div className="md:container mx-auto md:px-4 " >
+            <div className="w-full rounded-tr-[50px] md:rounded-3xl bg-[#2C3442] overflow-hidden flex flex-col md:flex-row relative">
+              <div className="absolute hidden md:block top-0 left-2/3 xl:left-[unset] xl:right-0 pointer-events-none">
+                <svg width="579" height="644" viewBox="0 0 579 644" fill="none" xmlns="http://www.w3.org/2000/svg" />
+              </div>
+
+              <div className="flex py-24 xl:py-32 px-8 xl:px-32 flex-col w-full md:w-2/3">
+                <h1 className="text-white text-3xl heading aos-init aos-animate" data-aos="fade-up">
+                  {/* Services <span className="text-[#4878D0]"> We Offer:</span>            </h1> */}
+                  Step-by-Step Guide on Shipping Your Pet:       </h1>
+                <div className="mt-8">
+                  <ul className="flex flex-col space-y-4">
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Destination Requirements - We will provide you with all requirements needed for your destination.                       </div>
+                    </li>
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Veterinarian Requirements – We will provide you with the veterinarian paperwork and documents needed for your destination.                         </div>
+                    </li>
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Region Requirements - Quarantine, Import Permits, Export Permits, Tapeworm Treatments, Parasite Treatments, Blood Tests & Vaccines – We’ll outline which of these apply to your move.                        </div>
+                    </li>
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Method of Transport - We will help you decide on the most appropriate method of transportation for your pet. Options may include commercial air travel, charter air travel, ground transportation, or a combination depending on the location and your pet&apos;s needs.                 </div>
+                    </li>
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Airline Options, Booking, Paperwork & Check-In Requirements - We will assist you with airline options, helping you book your pet(s) flight, airline paperwork needed, where to check-in, and the check-in process and requirements.                        </div>
+                    </li>
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Ground Transportation - We will assist you in determining if ground transport will be needed or required based on pet size, temperature, or breed.                        </div>
+                    </li>
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Airline Accepted Crates - We will advise the process for choosing a suitable travel crate that meets the requirements of your chosen transportation method and preparing the crate for travel.                       </div>
+                    </li>
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        Etc – We can provide additional options such as residential pick-up & airport check-in or airport pick-up & residential delivery                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <h1 className="text-white text-3xl mt-10 heading aos-init aos-animate" data-aos="fade-up">
+                  {/* Services <span className="text-[#4878D0]"> We Offer:</span>            </h1> */}
+                  Pre-filling Health Certificates:        </h1>
+                <div className="mt-8">
+                  <ul className="flex flex-col space-y-4">
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        We can assist by providing pre-filled health certificates or forms that meet the specific requirements of the destination country, airline, or transport regulations. This saves time for pet owners and ensures accuracy in documentation.                        </div>
+                    </li>
+                  </ul>
+                </div>
+                <h1 className="text-white text-3xl mt-10 heading aos-init aos-animate" data-aos="fade-up">
+                  {/* Services <span className="text-[#4878D0]"> We Offer:</span>            </h1> */}
+                  Reviewing Veterinarian&apos;s Paperwork:         </h1>
+                <div className="mt-8">
+                  <ul className="flex flex-col space-y-4">
+                    <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div className="w-5 pt-1 mr-2">
+                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                      </div>
+                      <div className="w-full text-base text-white">
+                        We can review all documentation provided by the pet owner&apos;s veterinarian to ensure it meets the necessary standards and requirements for travel. This includes verifying vaccination records, health certificates, microchip information, and any other relevant paperwork.                     </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex md:hidden aspect-[16/9] md:aspect-[unset] w-full md:w-1/3 bg-cover bg-center aos-init aos-animate" style={{ backgroundImage: "url('https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/11/87373.jpg?lossy=0&amp;strip=1&amp;webp=1')" }} data-aos="fade-left">
+              </div>
+              <div className="hidden md:flex aspect-[16/9] md:aspect-[unset] w-full md:w-1/3 bg-cover bg-center aos-init aos-animate" style={{ backgroundImage: "url('https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/11/Vet-checking-dog-is-fit-for-travel2c.jpg?lossy=0&amp;strip=1&amp;webp=1')" }} data-aos="fade-left">
+              </div>
+            </div>
           </div>
         </section>
         <section id="considers" className="dark:text-black flex justify-center pt-5 pb-10 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
           <div className=" max-w-7xl ml-36 mr-36  flex flex-wrap items-center text-center">
-            <div className=" text-center mt-10 items-center w-full">
-              <p className="text-5xl  text-[#4878D0]">Things <span className="text-[#4878D0]"> to Consider </span></p>
+            <div className=" text-center py-8 items-center w-full">
+              <p className="text-5xl ">Things <span className="text-[#4878D0]"> to Consider </span></p>
               <br />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">

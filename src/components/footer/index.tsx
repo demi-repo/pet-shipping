@@ -86,7 +86,7 @@ export default function Footer() {
                   </h3>
                   <div className="mt-1">
                     <a href="mailto:--><!--" className="font-light hover:underline">
-                      •	DIY@gamil.com
+                      •	info@diypetshiping.com
                     </a>
                   </div>
                   <div className="mt-1">
