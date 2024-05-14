@@ -96,27 +96,27 @@ export default function Footer() {
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         First Name
                       </label>
-                      <input className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Jane" />
+                      <input required className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Jane" />
                       {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-full md:w-1/4 px-3">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Last Name
                       </label>
-                      <input className="appearance-none block w-full bg-white text-gray-700 border bordbg-white rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
+                      <input required className="appearance-none block w-full bg-white text-gray-700 border bordbg-white rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
                     </div>
                     <div className="w-full md:w-1/4 px-3 mb-6 md:mb-0">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Email
                       </label>
-                      <input className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="guest@gmail.com" />
+                      <input required className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="guest@gmail.com" />
                       {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-full md:w-1/4 px-3">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Phone Number
                       </label>
-                      <input className="appearance-none block w-full bg-white text-gray-700 border bordbg-white rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="17243748910" />
+                      <input required className="appearance-none block w-full bg-white text-gray-700 border bordbg-white rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="17243748910" />
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mb-6">
@@ -124,21 +124,21 @@ export default function Footer() {
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Best Time to Speak
                       </label>
-                      <input type="date" className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="2024-01-01 11:00 AM" />
+                      <input required type="date" className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="2024-01-01 11:00 AM" />
                       {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-full md:w-1/2 px-3">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Travel Date
                       </label>
-                      <input type="date" className=" outline-none appearance-none block w-full bg-white text-gray-700 border bordbg-white rounded py-3 px-4 leading-tight " id="grid-last-name" placeholder="17243748910" />
+                      <input required type="date" className=" outline-none appearance-none block w-full bg-white text-gray-700 border bordbg-white rounded py-3 px-4 leading-tight " id="grid-last-name" placeholder="17243748910" />
                     </div>
                   </div>
                   <div className="md:w-full mb-6 md:mb-0">
                     <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                       Number of Pets
                     </label>
-                    <input className="appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="number" placeholder="0" />
+                    <input required className="appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="number" placeholder="0" />
                     {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                   </div>
                   <div className="flex flex-row">
@@ -146,7 +146,7 @@ export default function Footer() {
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Pet Name
                       </label>
-                      <input className=" w-11/12 appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Net" />
+                      <input required className=" w-11/12 appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Net" />
                       {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-1/3  mb-6 md:mb-0">
