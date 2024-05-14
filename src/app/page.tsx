@@ -297,10 +297,9 @@ export default function Home() {
             <img src="./assets/payment.png" loading="lazy" />
           </div>
         </section>
-        <div className="z-10 py-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
+        <div className="dark:text-black z-10 py-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
           <section className="pt-5">
             <div className="container mx-auto text-center">
-
               <div className="w-full reviews-slider flex justify-center mt-4">
                 <div className="w-full md:w-1/3 flex p-2.5">
                   <article className="w-full flex flex-col bg-white p-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
