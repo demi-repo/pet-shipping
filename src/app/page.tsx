@@ -6,7 +6,6 @@ import "swiper/css/pagination"
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import background from "../../public/assets/home/background.png"
-import { ImagesSlider } from "../components/sldier/images-slider";
 import { LayoutGrid } from "../components/gallery/gallery";
 import dynamic from "next/dynamic";
 import { HoverEffect } from "../components/hoverEffect/hoverEffect";
@@ -67,12 +66,12 @@ export default function Home() {
           </div>
         </section>
         <section id="aboutus" className=" dark:text-black flex justify-center relative bg-[#E5E7EB] h-[632px] rounded-bl-[150px] scroll-mt-24">
-          <div className=" max-w-[1600] ml-36 mr-36 pt-9  flex flex-wrap items-center text-center">
+          <div className=" max-w-[1600] ml-36 mr-36 flex flex-wrap items-center text-center">
             <div className="w-full md:w-2/5 lg:w-3/5 px-4 text-center md:text-left lg:pl-12">
               <div className="box-border">
                 <ul className="relative">
                   <li>
-                    <div className=" text-5xl px-6">Who <span className="text-[#4878D0]">we are</span>
+                    <div className=" text-4xl px-6">Who <span className="text-[#4878D0]">we are</span>
                     </div>
                     <div>
                       <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
@@ -81,7 +80,7 @@ export default function Home() {
                     </div>
                   </li>
                   <li>
-                    <div className=" text-5xl px-6 mt-6">Why<span className="text-[#4878D0]"> this service?</span>
+                    <div className=" text-4xl px-6 mt-6">Why<span className="text-[#4878D0]"> this service?</span>
                     </div>
                     <div>
                       <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
@@ -90,7 +89,7 @@ export default function Home() {
                     </div>
                   </li>
                   <li>
-                    <div className=" text-5xl px-6 mt-6">What <span className="text-[#4878D0]"> we offer:</span>
+                    <div className=" text-4xl px-6 mt-6">What <span className="text-[#4878D0]"> we offer:</span>
                     </div>
                     <div>
                       <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
@@ -102,14 +101,13 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-3/5 lg:w-2/5 px-4 animate-fade-left animate-duration-[2000ms] animate-ease-linear animate-normal animate-fill-forwards">
-              <ImagesSlider className="h-[33rem]" images={images}>
-              </ImagesSlider>
+              <img src="/assets/home/aboutus.jpg" />
             </div>
           </div>
         </section>
         <section id="petTypes" className="px-2 pt-5 w-full h-full scroll-mt-24">
           <div className="w-full"  >
-            <div className=" text-center items-center w-full">
+            <div className=" py-5 text-center items-center w-full">
               <p className="text-5xl">Pet <span className="text-[#4878D0]"> Types</span></p>
             </div>
           </div>
@@ -120,7 +118,7 @@ export default function Home() {
         <section id="destinations" className=" dark:text-black w-full scroll-mt-24">
           <GlobeDemo />
         </section>
-        <section id="services" className="flex pt-5 justify-center w-full scroll-mt-24">
+        <section id="services" className="flex pt-10 pb-10 justify-center w-full scroll-mt-24">
           <div className=" max-w-[1600] ml-36 mr-36 ">
             <div className=" text-center items-center w-full">
               <p className="text-5xl  text-[#4878D0]">Services</p>
@@ -130,7 +128,7 @@ export default function Home() {
             <HoverEffect items={projects} />
           </div>
         </section>
-        <section id="considers" className="dark:text-black flex justify-center pt-5 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
+        <section id="considers" className="dark:text-black flex justify-center pt-5 pb-10 w-full scroll-mt-24 bg-[#E5E7F0] rounded-bl-[150px]">
           <div className=" max-w-7xl ml-36 mr-36  flex flex-wrap items-center text-center">
             <div className=" text-center mt-10 items-center w-full">
               <p className="text-5xl  text-[#4878D0]">Things <span className="text-[#4878D0]"> to Consider </span></p>
@@ -201,12 +199,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex justify-center w-full scroll-mt-24">
+        <section className="flex justify-center py-10 w-full scroll-mt-24">
           <div className=" max-w-[1600] ml-36 mr-36 ">
             <img src="./assets/payment.png" loading="lazy" />
           </div>
         </section>
-        <div className="dark:text-black z-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
+        <div className="z-10 py-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
           <section className="pt-5">
             <div className="container mx-auto text-center">
 
@@ -298,7 +296,6 @@ export default function Home() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Black Lab</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -307,7 +304,6 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Yellow Lab Pup</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -315,7 +311,6 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Cat</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -323,7 +318,6 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Ferret</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -331,7 +325,6 @@ const SkeletonFour = () => {
 const SkeletonFive = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Bunny</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -339,7 +332,6 @@ const SkeletonFive = () => {
 const SkeletonSix = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Turtle</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -347,7 +339,6 @@ const SkeletonSix = () => {
 const SkeletonSeven = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Snake</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -355,7 +346,6 @@ const SkeletonSeven = () => {
 const SkeletonEight = () => {
   return (
     <div>
-      <p className=" text-4xl text-white">Iguana</p>
       <p className="font-normal text-base text-white"></p>
     </div>
   );
@@ -920,13 +910,13 @@ export const projects = [
       "Which crates will the airline accept for both in-cabin and cargo and where to get them. "
   },
   {
-    title: "International or Domestic Document Reviews",
+    title: "Airline Accepted Crates & Where to Get Them",
     description:
-      "Customized DIY How-To for Your Pet’s International or Domestic Transport. "
+      "Which crates will the airline accept for both in-cabin and cargo and where to get them. "
   },
   {
-    title: "International or Domestic Health Certificate Pre-Fills",
+    title: "International or Domestic Document Reviews",
     description:
-      "Customized DIY How-To for Your Pet’s International or Domestic Transport. "
+      "Which crates will the airline accept for both in-cabin and cargo and where to get them. "
   }
 ];
