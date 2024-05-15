@@ -83,7 +83,7 @@ export default function Header() {
         </div>
         <div className={` text-lg py-7 cursor-pointer float-right `}>
           <button onClick={handleModal} className={`${value ? "text-black bg-[#c7d7f5] hover:bg-[rgb(146,162,204)]" : "bg-[#4878D0] hover:bg-[rgb(118,139,196)]"}  py-2 rounded-[20px] w-64`}>
-            <span>Request Now!</span>
+            <span>Request Services</span>
           </button>
           {openModal &&
             <div className='fixed top-0 left-0 w-full h-full bg-gray-300 flex justify-center items-center'>
