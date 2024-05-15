@@ -31,7 +31,7 @@ export default function Home() {
           />
           <div className="flex flex-col items-center left-16 bottom-1/4 absolute">
             <h1 className="animate-fade-right animate-once animate-duration-[3000ms] animate-ease-linear relative mt-40 text-8xl text-pretty tracking-wider leading-[60px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">
-              DIY Pet Shipping Consults
+              DIY Pet Shipping
             </h1>
             <p className="animate-fade-up animate-duration-3000 animate-ease-linear animate-normal animate-fill-forwards relative mt-20 text-5xl text-pretty leading-6 max-md:max-w-full">
               Guiding Your Pet’s Journey, Every Step of the Way!
@@ -114,42 +114,42 @@ export default function Home() {
                         <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
                       </div>
                       <div className="w-full text-base text-white">
-                        Destination Requirements - We will provide you with all requirements needed for your destination.                       </div>
+                        Destination Requirements - We will advise you on all requirements for your destination.                        </div>
                     </li>
                     <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                       <div className="w-5 pt-1 mr-2">
                         <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
                       </div>
                       <div className="w-full text-base text-white">
-                        Veterinarian Requirements – We will provide you with the veterinarian paperwork and documents needed for your destination.                         </div>
+                        Veterinarian Requirements – We will advise you on all veterinarian paperwork and documents needed for your destination.                        </div>
                     </li>
                     <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                       <div className="w-5 pt-1 mr-2">
                         <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
                       </div>
                       <div className="w-full text-base text-white">
-                        Region Requirements - Quarantine, Import Permits, Export Permits, Tapeworm Treatments, Parasite Treatments, Blood Tests & Vaccines – We’ll outline which of these apply to your move.                        </div>
+                        Region Requirements - Quarantine, Import Permits, Export Permits, Tapeworm Treatments, Parasite Treatments, Blood Tests & Vaccines – We&apos;ll advise you on which apply to your move.                        </div>
                     </li>
                     <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                       <div className="w-5 pt-1 mr-2">
                         <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
                       </div>
                       <div className="w-full text-base text-white">
-                        Method of Transport - We will help you decide on the most appropriate method of transportation for your pet. Options may include commercial air travel, charter air travel, ground transportation, or a combination depending on the location and your pet&apos;s needs.                 </div>
+                        Method of Transport - We will advise you on the most appropriate method of transportation for your pet. Options include commercial air travel, charter air travel, ground transportation, or a combination depending on the location and your pet&apos;s needs..                 </div>
                     </li>
                     <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
                       <div className="w-5 pt-1 mr-2">
                         <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
                       </div>
                       <div className="w-full text-base text-white">
-                        Airline Options, Booking, Paperwork & Check-In Requirements - We will assist you with airline options, helping you book your pet(s) flight, airline paperwork needed, where to check-in, and the check-in process and requirements.                        </div>
+                        Airline Options, Flight Booking, Paperwork & Checking-In - We will advise you on airline options, how to book your pet(s) flight, airline paperwork needed, where to check-in, the check-in process, and requirements.                        </div>
                     </li>
                     <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
                       <div className="w-5 pt-1 mr-2">
                         <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
                       </div>
                       <div className="w-full text-base text-white">
-                        Ground Transportation - We will assist you in determining if ground transport will be needed or required based on pet size, temperature, or breed.                        </div>
+                        Ground Transportation - We will advise whether ground transport will be needed or required based on pet size, temperature, or breed.                         </div>
                     </li>
                     <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
                       <div className="w-5 pt-1 mr-2">
@@ -163,7 +163,7 @@ export default function Home() {
                         <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
                       </div>
                       <div className="w-full text-base text-white">
-                        Etc – We can provide additional options such as residential pick-up & airport check-in or airport pick-up & residential delivery                      </div>
+                        Additionally – We can advise on extra options such as residential pick-up & airport check-in or airport pick-up & residential delivery if you cannot do so                      </div>
                     </li>
                   </ul>
                 </div>

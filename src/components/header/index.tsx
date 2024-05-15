@@ -81,7 +81,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className={` text-lg py-7 cursor-pointer  `}>
+        <div className={` text-lg py-7 cursor-pointer float-right `}>
           <button onClick={handleModal} className={`${value ? "text-black bg-[#c7d7f5] hover:bg-[rgb(146,162,204)]" : "bg-[#4878D0] hover:bg-[rgb(118,139,196)]"}  py-2 rounded-[20px] w-64`}>
             <span>Request Now!</span>
           </button>
@@ -223,17 +223,11 @@ export default function Header() {
             </div>
           }
         </div>
-        <div className={`${value ? "text-black" : "text-white"} mt-5 px-7 cursor-pointer`}>
-          <div className=" text-sm w-72">
-            <div className="mt-1">
-              <span className="font-light">
-                •	info@diypetshiping.com
-              </span>
-            </div>
-            <div className="mt-1">
-              <span className="font-light">
-                •	phone number: (888) 202-4660
-              </span>
+        <div className={`${value ? "text-black" : "text-white"} mt-2 px-10 cursor-pointer`}>
+          <div className=" text-sm w-80">
+            <div className="">
+              <a href="mailto:--><!--"><span className="hover:underline font-light hover:text-[#4878D0]">info@diypetshiping.com </span></a>
+              <a href="tel:--><!--" ></a><span className="hover:under linefont-light hover:text-[#4878D0]">| (888) 202-4660</span>
             </div>
           </div>
         </div>
