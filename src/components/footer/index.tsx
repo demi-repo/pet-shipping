@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="bg-tertiary bg-[#E5E7F0]">
+      <div id="contactus" className="bg-tertiary bg-[#E5E7F0]">
         <div className="container px-4 mx-auto py-16">
           <div className="flex text-base flex-col md:flex-row text-left w-full text-black">
             <div className="flex flex-col md:flex-row w-full">
@@ -73,6 +73,8 @@ export default function Footer() {
                     </a>
                   </li>
                 </ul>
+              </div>
+              <div>
                 <h3 className="mt-6 font-light text-lg">
                   <a href="#contactus">
                     Contact us
@@ -89,7 +91,7 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="w-2/3 md:w-2/3 mt-8 md:mt-0">
+              {/* <div className="w-2/3 md:w-2/3 mt-8 md:mt-0">
                 <form className="w-full flex flex-col">
                   <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full md:w-1/4 px-3 mb-6 md:mb-0">
@@ -97,7 +99,6 @@ export default function Footer() {
                         First Name
                       </label>
                       <input required className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Jane" />
-                      {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-full md:w-1/4 px-3">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
@@ -110,7 +111,6 @@ export default function Footer() {
                         Email
                       </label>
                       <input required className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="guest@gmail.com" />
-                      {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-full md:w-1/4 px-3">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
@@ -125,7 +125,6 @@ export default function Footer() {
                         Best Time to Speak
                       </label>
                       <input required type="date" className="appearance-none block w-full bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="2024-01-01 11:00 AM" />
-                      {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-full md:w-1/2 px-3">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
@@ -139,7 +138,6 @@ export default function Footer() {
                       Number of Pets
                     </label>
                     <input required className="appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="number" placeholder="0" />
-                    {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                   </div>
                   <div className="flex flex-row">
                     <div className="w-1/3  mb-6 md:mb-0">
@@ -147,21 +145,18 @@ export default function Footer() {
                         Pet Name
                       </label>
                       <input required className=" w-11/12 appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Net" />
-                      {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-1/3  mb-6 md:mb-0">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Pet Age
                       </label>
                       <input className=" w-11/12 appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="0" />
-                      {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-1/3  mb-6 md:mb-0">
                       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                         Pet Weight
                       </label>
                       <input className=" w-11/12 appearance-none block bg-white text-gray-700 border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="0kg" />
-                      {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
 
                   </div>
@@ -209,7 +204,7 @@ export default function Footer() {
                     </button>
                   </div>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

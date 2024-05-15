@@ -18,24 +18,6 @@ const words = `Oxygen gets you high. In a catastrophic emergency, we're taking g
 
 export default function Home() {
 
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    }
-  };
-
   return (
     <>
       <main>
@@ -45,7 +27,7 @@ export default function Home() {
             loading="lazy"
             src={background}
             alt="Hero background"
-            className="object-cover absolute inset-0 size-full"
+            className="object-cover absolute inset-0 w-full"
           />
           <div className="flex flex-col items-center left-16 bottom-1/4 absolute">
             <h1 className="animate-fade-right animate-once animate-duration-[3000ms] animate-ease-linear relative mt-40 text-8xl text-pretty tracking-wider leading-[60px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">
@@ -185,8 +167,9 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+                <h1 className="text-white text-xl mt-3 heading aos-init aos-animate text-center" data-aos="fade-up"> International - $300 USD </h1>
+                <h1 className="text-white text-xl heading aos-init aos-animate text-center" data-aos="fade-up"> Domestic - $150 USD </h1>
                 <h1 className="text-white text-3xl mt-10 heading aos-init aos-animate" data-aos="fade-up">
-                  {/* Services <span className="text-[#4878D0]"> We Offer:</span>            </h1> */}
                   Pre-filling Health Certificates:        </h1>
                 <div className="mt-8">
                   <ul className="flex flex-col space-y-4">
@@ -199,6 +182,8 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+                <h1 className="text-white text-xl mt-3 heading aos-init aos-animate text-center" data-aos="fade-up"> International - $50 USD </h1>
+                <h1 className="text-white text-xl heading aos-init aos-animate text-center" data-aos="fade-up"> Domestic - $25 USD </h1>
                 <h1 className="text-white text-3xl mt-10 heading aos-init aos-animate" data-aos="fade-up">
                   {/* Services <span className="text-[#4878D0]"> We Offer:</span>            </h1> */}
                   Reviewing Veterinarian&apos;s Paperwork:         </h1>
@@ -213,10 +198,13 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+                <h1 className="text-white text-xl mt-3 heading aos-init aos-animate text-center" data-aos="fade-up"> International - $75 USD </h1>
+                <h1 className="text-white text-xl heading aos-init aos-animate text-center" data-aos="fade-up"> Domestic - $25 USD </h1>
+                <h1 className="text-white text-xl heading aos-init mt-10 aos-animate" data-aos="fade-up">&nbsp;&nbsp;By offering these services, we can help pet owners navigate the often complex paperwork, procedures, and regulatory requirements associated with transporting pets domestically or internationally. <br /> &nbsp;&nbsp;This helps to ensure a smooth and hassle-free experience for both the pets and their owners. </h1>
               </div>
-              <div className="flex md:hidden aspect-[16/9] md:aspect-[unset] w-full md:w-1/3 bg-cover bg-center aos-init aos-animate" style={{ backgroundImage: "url('https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/11/87373.jpg?lossy=0&amp;strip=1&amp;webp=1')" }} data-aos="fade-left">
+              <div className="flex md:hidden aspect-[16/9] md:aspect-[unset] w-full md:w-1/3 bg-cover bg-center aos-init aos-animate" style={{ backgroundImage: "url('./assets/home/services2.jpg?lossy=0&amp;strip=1&amp;webp=1')" }} data-aos="fade-left">
               </div>
-              <div className="hidden md:flex aspect-[16/9] md:aspect-[unset] w-full md:w-1/3 bg-cover bg-center aos-init aos-animate" style={{ backgroundImage: "url('https://b3388717.smushcdn.com/3388717/wp-content/uploads/2023/11/Vet-checking-dog-is-fit-for-travel2c.jpg?lossy=0&amp;strip=1&amp;webp=1')" }} data-aos="fade-left">
+              <div className="hidden md:flex aspect-[16/9] md:aspect-[unset] w-full md:w-1/3 bg-cover bg-center aos-init aos-animate" style={{ backgroundImage: "url('/assets/home/services1.jpg?lossy=0&amp;strip=1&amp;webp=1')" }} data-aos="fade-left">
               </div>
             </div>
           </div>
@@ -297,7 +285,7 @@ export default function Home() {
             <img src="./assets/payment.png" loading="lazy" />
           </div>
         </section>
-        <div className="dark:text-black z-10 py-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary">
+        <div className="z-10 py-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand  acf/reviews bg-tertiary dark:text-black">
           <section className="pt-5">
             <div className="container mx-auto text-center">
               <div className="w-full reviews-slider flex justify-center mt-4">
