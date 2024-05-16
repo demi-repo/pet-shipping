@@ -9,6 +9,7 @@ import background from "../../public/assets/home/background.png"
 import { LayoutGrid } from "../components/gallery/gallery";
 import dynamic from "next/dynamic";
 import emailjs from '@emailjs/browser';
+import { env } from "process";
 
 const World = dynamic(() => import("../components/globe/globe").then((m) => m.World), {
   ssr: false,
@@ -58,19 +59,24 @@ export default function Home() {
       depart: depart,
       topart: topart
     }
-    emailjs
-      .send('service_diypetshipping', 'template_d5xmtgk', params, {
-        publicKey: 'F6nsA1VNLtqibhRGv',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          handleModal()
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+    const service_id = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const public_key = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+    if (service_id && template_id && public_key) {
+      emailjs
+        .send(service_id, template_id, params, {
+          publicKey: public_key,
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            handleModal()
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    }
   };
 
 
@@ -108,7 +114,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
-                        <div className="text">We’re a family-owned pet-loving company.</div>
+                        <div className="text">We’re a US-based family-owned pet-loving company.</div>
                       </div>
                     </div>
                   </li>
