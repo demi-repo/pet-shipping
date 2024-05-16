@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useState, useEffect, useRef, FormEvent } from "react";
 import "swiper/css";
 import "swiper/css/pagination"
 import "react-multi-carousel/lib/styles.css";
@@ -8,7 +8,7 @@ import Image from "next/image";
 import background from "../../public/assets/home/background.png"
 import { LayoutGrid } from "../components/gallery/gallery";
 import dynamic from "next/dynamic";
-import { FormEvent } from 'react'
+import emailjs from '@emailjs/browser';
 
 const World = dynamic(() => import("../components/globe/globe").then((m) => m.World), {
   ssr: false,
@@ -18,13 +18,18 @@ const words = `Oxygen gets you high. In a catastrophic emergency, we're taking g
 `;
 
 export default function Home() {
+
+  const form = useRef<HTMLFormElement>(null);
+
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
-  const [lastemail, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [phonenumber, setPhoneNumber] = useState("");
   const [speaktime, setSpeaktime] = useState("");
   const [traveldate, setTraveldate] = useState("");
   const [petsnumber, setPetsnumber] = useState("");
+  const [petspecies, setPetSpecies] = useState("");
+  const [petbreed, setPetBreed] = useState("");
   const [petname, setPetName] = useState("");
   const [petage, setPetAge] = useState("");
   const [petweight, setPetweight] = useState("");
@@ -33,26 +38,41 @@ export default function Home() {
 
   const [openModal, setModal] = useState(false);
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const formData = {
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+    if (!form.current) return;
+
+    const params = {
       firstname: firstname,
       lastname: lastname,
-      email: lastemail,
+      email: email,
       phonenumber: phonenumber,
       speaktime: speaktime,
       traveldate: traveldate,
       petsnumber: petsnumber,
+      petspecies: petspecies,
+      petbreed: petbreed,
       petname: petname,
       petage: petage,
       petweight: petweight,
       depart: depart,
       topart: topart
-    };
+    }
+    emailjs
+      .send('service_diypetshipping', 'template_d5xmtgk', params, {
+        publicKey: 'F6nsA1VNLtqibhRGv',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          handleModal()
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
-    console.log(formData);
-    handleModal()
-  }
 
   const handleModal = () => {
     setModal(!openModal)
@@ -225,7 +245,6 @@ export default function Home() {
                 <h1 className="text-white text-xl mt-3 heading aos-init aos-animate text-center" data-aos="fade-up"> International - $50 USD </h1>
                 <h1 className="text-white text-xl heading aos-init aos-animate text-center" data-aos="fade-up"> Domestic - $25 USD </h1>
                 <h1 className="text-white text-3xl mt-10 heading aos-init aos-animate" data-aos="fade-up">
-                  {/* Services <span className="text-[#4878D0]"> We Offer:</span>            </h1> */}
                   Reviewing Veterinarian&apos;s Paperwork:         </h1>
                 <div className="mt-8">
                   <ul className="flex flex-col space-y-4">
@@ -246,12 +265,12 @@ export default function Home() {
                     <span>Request Services</span>
                   </button>
                   {openModal &&
-                    <div className='fixed z-50 top-0 left-0 w-full h-full bg-gray-300 flex justify-center items-center'>
+                    <div className='z-50 fixed top-0 left-0 w-full h-full bg-gray-300 flex justify-center items-center'>
                       <div className='max-w-[460px] bg-white shadow-lg py-2 rounded-md'>
                         <h2 className='text-sm font-medium text-gray-900 border-b border-gray-300 py-3 px-4 mb-4'>This is my modal.</h2>
                         <div className=" w-screen h-screen absolute z-[999] top-0 left-0 justify-center flex flex-row bg-[rgba(0,0,0,0.4)]">
                           <div className="flex flex-col justify-center w-full items-center ">
-                            <form className="w-3/5 flex flex-col min-w-[600] px-36 pb-36 pt-24 bg-[#2C3442] h-4/5 rounded-3xl" onSubmit={handleSubmit}>
+                            <form ref={form} className="w-3/5 flex flex-col min-w-[600] px-36 pb-36 pt-24 bg-[#2C3442] h-4/5 rounded-3xl" onSubmit={sendEmail}>
                               <div className='px-4 pt-2'>
                                 <button
                                   type='button'
@@ -306,28 +325,42 @@ export default function Home() {
                                   <input required onChange={e => setTraveldate(e.target.value)} name="traveldate" type="date" className=" outline-none appearance-none block w-full bg-white text-black border bordbg-white rounded py-3 px-4 leading-tight " id="grid-last-name" placeholder="17243748910" />
                                 </div>
                               </div>
-                              <div className="md:w-full mb-6 md:mb-0">
-                                <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
-                                  Number of Pets
-                                </label>
-                                <input required onChange={e => setPetsnumber(e.target.value)} name="petsnumber" className="appearance-none block bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="number" placeholder="0" />
+                              <div className="flex flex-row">
+                                <div className="md:w-full mb-6 md:mb-0">
+                                  <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
+                                    Number of Pets
+                                  </label>
+                                  <input required onChange={e => setPetsnumber(e.target.value)} name="petsnumber" className="appearance-none block bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="number" placeholder="0" />
+                                </div>
+                                <div className="md:w-full mb-6 md:mb-0">
+                                  <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
+                                    Pet Species
+                                  </label>
+                                  <input required onChange={e => setPetSpecies(e.target.value)} name="petspecies" className="appearance-none block bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Species" />
+                                </div>
+                                <div className="md:w-full mb-6 md:mb-0">
+                                  <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
+                                    Pet Breed
+                                  </label>
+                                  <input required onChange={e => setPetBreed(e.target.value)} name="petbreed" className="appearance-none block bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Breed" />
+                                </div>
                               </div>
                               <div className="flex flex-row">
                                 <div className="w-1/3  mb-6 md:mb-0">
                                   <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
-                                    Pet Name
+                                    Pet Name(s)
                                   </label>
                                   <input required onChange={e => setPetName(e.target.value)} name="petname" className=" w-11/12 appearance-none block bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="Net" />
                                 </div>
                                 <div className="w-1/3  mb-6 md:mb-0">
                                   <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
-                                    Pet Age
+                                    Pet Age(s)
                                   </label>
                                   <input required onChange={e => setPetAge(e.target.value)} name="petage" className=" w-11/12 appearance-none block bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="0" />
                                 </div>
                                 <div className="w-1/3  mb-6 md:mb-0">
                                   <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
-                                    Pet Weight
+                                    Pet Weight(s)
                                   </label>
                                   <input required onChange={e => setPetweight(e.target.value)} name="petweight" className=" w-11/12 appearance-none block bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="0kg" />
                                 </div>
